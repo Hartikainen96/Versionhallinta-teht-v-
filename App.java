@@ -5,7 +5,7 @@ public class App {
       Scanner in = new Scanner(System.in);
    String oikeaarvaus = "Teemu";
    String kayttajanarvaus = "";
-   String lopetus = "stop";
+   String ending = "stop";
    int arvaukset = 0;
 
    do {
@@ -13,9 +13,9 @@ public class App {
     
     kayttajanarvaus = in.nextLine();
 
-    if (kayttajanarvaus.equals(lopetus))
+    if (kayttajanarvaus.equals(ending))
     {
-      System.out.println("You guessed " + arvaukset +  " times.");
+      System.out.println("You guessed " + ending +  " times.");
       break;
     }
     arvaukset++;
@@ -23,7 +23,7 @@ public class App {
     if (kayttajanarvaus.equals(oikeaarvaus))
     {
       System.out.println("Congratulations!");
-      System.out.println("You guessed " + arvaukset + " times. ");
+      System.out.println("You guessed " + ending + " times. ");
       break;
     }
    }
