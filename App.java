@@ -15,7 +15,7 @@ public class App {
 
     if (kayttajanarvaus.equals(ending))
     {
-      System.out.println("You guessed " + ending +  " times.");
+      System.out.println("You guessed " + arvaukset +  " times.");
       break;
     }
     arvaukset++;
@@ -23,7 +23,7 @@ public class App {
     if (kayttajanarvaus.equals(oikeaarvaus))
     {
       System.out.println("Congratulations!");
-      System.out.println("You guessed " + ending + " times. ");
+      System.out.println("You guessed " + arvaukset + " times. ");
       break;
     }
    }
